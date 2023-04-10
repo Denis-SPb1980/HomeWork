@@ -85,7 +85,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.Write("Enter a string that contains letters and numbers: ");
             string inputString = Console.ReadLine();
 
-            string lettersOnly = new String(inputString.Where(Char.IsDigit).ToArray());
+            string lettersOnly = new String(inputString.Where(Char.IsLetter).ToArray());
             Console.WriteLine(lettersOnly);
         }
 
